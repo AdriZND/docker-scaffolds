@@ -12,7 +12,16 @@ Con este scaffold puedes crear una base para iniciar el desarrollo de un proyect
 docker compose run django django-admin startproject myproject .
 ```
 
-**4. Configura myproject/settings.py para la BDD**
+**4. Da permisos a tu usuario**
+
+Para poder modificar los archivos del contenedor
+```
+sudo chown -R $USER:$USER /ruta/a/tu/proyecto
+sudo chmod -R 755 /ruta/a/tu/proyecto
+
+```
+
+**5. Configura myproject/settings.py para la BDD**
 
 ```
 import os
@@ -29,13 +38,13 @@ DATABASES = {
 }
 ```
 
-**5. Ejecuta docker compose**
+**6. Ejecuta docker compose**
 
 ```
 docker compose up --build -d
 ```
 
-**6. Crea las apps que quieras con**
+**7. Crea las apps que quieras con**
 
 ```
 docker-compose run web python manage.py startapp myapp
