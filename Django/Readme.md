@@ -3,11 +3,15 @@
 Con este scaffold puedes crear una base para iniciar el desarrollo de un proyecto con Python, Django y una base de datos de PostgreSQL.
 
 **1. Crea el directorio para tu proyecto**
+
 **2. Copia los archivos a tu proyecto**
+
 **3. Ejecuta**
+
 ```
 docker-compose run django django-admin startproject myproject .
 ```
+
 **4. Configura myproject/settings.py para la BDD**
 
 ```
@@ -26,11 +30,13 @@ DATABASES = {
 ```
 
 **5. Ejecuta docker compose**
+
 ```
 docker compose up --build -d
 ```
 
 **6. Crea las apps que quieras con**
+
 ```
 docker-compose run web python manage.py startapp myapp
 ```
