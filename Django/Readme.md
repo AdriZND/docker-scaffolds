@@ -9,7 +9,7 @@ Con este scaffold puedes crear una base para iniciar el desarrollo de un proyect
 **3. Ejecuta**
 
 ```
-docker-compose run django django-admin startproject myproject .
+docker compose run django django-admin startproject myproject .
 ```
 
 **4. Configura myproject/settings.py para la BDD**
