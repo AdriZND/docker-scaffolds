@@ -47,7 +47,7 @@ docker compose up --build -d
 **7. Crea las apps que quieras con**
 
 ```
-docker-compose run web python manage.py startapp myapp
+docker-compose run django python manage.py startapp myapp
 ```
 
 Ya puedes trabajar con un entorno de Python, Django y PostgreSQL a través de contenedores sin tener nada instalado bare-metal en tu host.
